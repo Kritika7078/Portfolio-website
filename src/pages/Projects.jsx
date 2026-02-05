@@ -36,16 +36,16 @@ const Projects = () => {
       techStack: ['SQL', 'Database Design', 'Query Optimization'],
       link: 'https://github.com/Kritika7078/Election_Voting_System',
       linkText: 'GitHub →'
-    },
-    {
-      id: 4,
-      title: 'Food App',
-      status: 'Completed',
-      description: 'Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend for scalable performance.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Full-Stack'],
-      link: 'https://github.com/Kritika7078/Nodejs_RegisterAndLogin',
-      linkText: 'Github →'
     }
+    // {
+    //   id: 4,
+    //   title: 'Food App',
+    //   status: 'Completed',
+    //   description: 'Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend for scalable performance.',
+    //   techStack: ['React', 'Node.js', 'MongoDB', 'Full-Stack'],
+    //   link: 'https://github.com/Kritika7078/Nodejs_RegisterAndLogin',
+    //   linkText: 'Github →'
+    // }
   ];
 
   const filteredProjects = filter === 'All' 
