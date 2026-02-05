@@ -11,7 +11,7 @@ const Projects = () => {
       status: 'Ongoing',
       description: 'An agentic AI-based customer support system in which autonomous agents perform intent analysis, decision-making, and workflow execution to resolve user queries. Designed to automate multi-step support actions while minimizing response latency and manual intervention.',
       techStack: ['Python', 'OpenAI API (LLMs)', 'Machine Learning', 'Agentic AI Architecture'],
-      link: 'https://github.com/Arshgarg2005/Automated_Customer_Support',
+      link: 'https://github.com/Kritika7078/Customer_Suppor_-Automation',
       linkText: 'GitHub →'
     },
     {
