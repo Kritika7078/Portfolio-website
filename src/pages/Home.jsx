@@ -135,7 +135,7 @@ const Home = () => {
                 className="flex flex-wrap gap-4"
               >
                 <a
-                  href="https://drive.google.com/file/d/1RTS361tSZ4hJmCPUhw39dmoPYAwUcZA0/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1f3rtvWALx8x_CSPSCcMLbEm3mJrxXbkB/view?usp=sharing"
                   download
                   className="px-6 py-3 rounded-lg font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
                 >
