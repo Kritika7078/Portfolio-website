@@ -139,7 +139,7 @@ const Home = () => {
                   download
                   className="px-6 py-3 rounded-lg font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
                 >
-                  Download Resume (PDF)
+                  Resume (PDF)
                 </a>
                 <Link
                   to="/projects"
