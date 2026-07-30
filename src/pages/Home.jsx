@@ -109,7 +109,7 @@ const Home = () => {
                 variants={itemVariants}
                 className="text-lg md:text-xl text-text-secondary mb-8"
               >
-                My work focuses on building scalable ML pipelines and Transformer-based deep learning models. I am actively seeking internship opportunities in software engineering roles.
+                Computer Engineering undergraduate at Thapar Institute of Engineering and Technology with interests in Software Engineering, Machine Learning, Deep Learning, Computer Vision and AI Systems. I build scalable software systems, ML pipelines and AI-powered applications, and I am actively seeking Software Engineering internships.
               </motion.p>
 
               <motion.div
@@ -135,11 +135,20 @@ const Home = () => {
                 className="flex flex-wrap gap-4"
               >
                 <a
-                  href="https://drive.google.com/file/d/1f3rtvWALx8x_CSPSCcMLbEm3mJrxXbkB/view?usp=sharing"
-                  download
+                  href="https://drive.google.com/file/d/1IeK6St6D1ex9SA-p_K7CPJPMM79JYg86/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-6 py-3 rounded-lg font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
                 >
-                  Resume (PDF)
+                  Resume (SDE)
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/18qpsaxaXCw_az5cckyPhgjj3mK0VFeey/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 rounded-lg font-semibold text-white bg-primary hover:bg-primary/90 transition-all shadow-md hover:shadow-lg"
+                >
+                  Resume (AI)
                 </a>
                 <Link
                   to="/projects"
@@ -192,13 +201,16 @@ const Home = () => {
             </div>
             <div className="space-y-4 text-base text-text-secondary leading-relaxed text-left">
               <p>
-                I am a Computer Engineering undergraduate with a strong foundation in full-stack development and applied machine learning. My work focuses on building scalable web systems and developing deep learning models for real-world computer vision problems.
+                I am a Computer Engineering undergraduate at Thapar Institute of Engineering and Technology (CGPA 9.77) with a strong interest in Software Engineering and Artificial Intelligence.
               </p>
               <p>
-                I have research experience working with Vision Transformer architectures for image restoration, co-authoring a paper published at the CVPR 2025 Workshop. Through internships at IIT Bhubaneswar and IIT Jodhpur, I have gained hands-on experience designing and evaluating AI models at scale.
+                My experience spans full-stack backend systems, event-driven architectures, computer vision research, deep learning, and machine learning deployment. I enjoy building scalable software systems that combine modern backend engineering with practical AI solutions.
               </p>
               <p>
-                I am currently seeking internship or early-career opportunities where I can contribute to impactful projects in software engineering, machine learning, or applied AI.
+                I have worked as a Software Engineering Intern at Codsai, an AI Systems Intern at IIT Bhubaneswar, and a Summer Intern at IIT Jodhpur. My work includes AI-powered counselor avatars, transformer-based image restoration, and intelligent automation platforms.
+              </p>
+              <p>
+                Currently, I am looking for Software Engineering internships while continuing to build production-ready AI systems and scalable backend applications.
               </p>
             </div>
           </motion.div>
@@ -283,27 +295,19 @@ const Home = () => {
                 [
                   {
                     category: 'Languages',
-                    skills: ['C', 'C++', 'Python', 'SQL', 'React.js', 'HTML', 'CSS']
+                    skills: ['C++', 'Python', 'SQL']
                   },
                   {
-                    category: 'Frontend',
-                    skills: ['React', 'Tailwind CSS']
+                    category: 'Frameworks & Tools',
+                    skills: ['PyTorch', 'Node.js', 'React', 'Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor']
                   },
                   {
-                    category: 'Backend & DB',
-                    skills: ['Node.js', 'MySQL']
-                  },
-                  {
-                    category: 'ML & DL',
-                    skills: ['Machine Learning', 'Deep Learning', 'Transformers', 'Image Restoration']
+                    category: 'Concepts',
+                    skills: ['Data Structures and Algorithms', 'Object-Oriented Programming', 'Operating Systems', 'Database Management Systems', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'Conversational AI']
                   },
                   {
                     category: 'Libraries',
-                    skills: ['NumPy', 'Pandas', 'OpenCV', 'Matplotlib', 'Tensorflow']
-                  },
-                  {
-                    category: 'Tools',
-                    skills: ['Git/GitHub', 'Linux', 'Google Colab', 'Anaconda', 'VS Code', 'MATLAB', 'RStudio']
+                    skills: ['NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'NLTK', 'OpenCV', 'joblib']
                   }
                 ].map(skillGroup => (
                   <motion.div
@@ -336,24 +340,24 @@ const Home = () => {
             </div>
             <ul className="space-y-4 text-base text-text-secondary">
               <li className="flex items-start p-3 rounded-lg transition-colors hover:bg-background">
-                <span className="mr-4 mt-1 text-primary font-bold">✓</span>
-                <span>Selected among the <span className="font-semibold text-primary">Top 32</span> teams out of <span className="font-semibold text-primary">361+</span> participants in the <span className="font-semibold text-primary">CVPR NTIRE 2025</span> Challenge.</span>
+                <span className="mr-4 mt-1 text-primary font-bold">•</span>
+                <span>Top 32 team worldwide in the <span className="font-semibold text-primary">CVPR NTIRE 2025 Challenge</span> out of 361+ participating teams.</span>
               </li>
               <li className="flex items-start p-3 rounded-lg transition-colors hover:bg-background">
-                <span className="mr-4 mt-1 text-primary font-bold">✓</span>
-                <span>Co-author of a paper published at the <span className="font-semibold text-primary">CVPR 2025 Workshop</span>.</span>
+                <span className="mr-4 mt-1 text-primary font-bold">•</span>
+                <span><span className="font-semibold text-primary">Merit-1 and Merit-2 Scholarships</span> totaling ₹8.8L+ for academic excellence (Top 10% of the Computer Engineering department).</span>
               </li>
               <li className="flex items-start p-3 rounded-lg transition-colors hover:bg-background">
-                <span className="mr-4 mt-1 text-primary font-bold">✓</span>
-                <span>Recognized as a National Semi-Finalist in <span className="font-semibold text-primary">Flipkart GRiD 4.0</span> (2025).</span>
+                <span className="mr-4 mt-1 text-primary font-bold">•</span>
+                <span><span className="font-semibold text-primary">Coordinator</span> of the Visual and Signal Information Processing (VSIP) Group at TIET.</span>
               </li>
               <li className="flex items-start p-3 rounded-lg transition-colors hover:bg-background">
-                <span className="mr-4 mt-1 text-primary font-bold">✓</span>
-                <span>Awarded merit-based scholarship at Thapar Institute of Engineering and Technology for academic excellence.</span>
+                <span className="mr-4 mt-1 text-primary font-bold">•</span>
+                <span>Solved <span className="font-semibold text-primary">290+ LeetCode problems</span> with 600+ submissions and maintained over 200 active coding days.</span>
               </li>
               <li className="flex items-start p-3 rounded-lg bg-primary/5">
-                <span className="mr-4 mt-1 font-bold text-secondary">✓</span>
-                <span>Formally recognized for technical contributions to Vision Science and Image Processing (VSIP) initiatives.</span>
+                <span className="mr-4 mt-1 font-bold text-secondary">•</span>
+                <span>Completed <span className="font-semibold text-primary">Andrew Ng's Machine Learning Specialization</span> (Coursera): Supervised Machine Learning, Advanced Learning Algorithms, Unsupervised Learning, Recommenders & Reinforcement Learning.</span>
               </li>
             </ul>
           </motion.div>

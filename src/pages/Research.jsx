@@ -77,34 +77,28 @@ const Research = () => {
               NTIRE 2025 Challenge on Day and Night Raindrop Removal for Dual-Focused Images: Methods and Results
             </h3>
             <p className="mb-4 text-base text-text-secondary">
-              Published in the CVPR 2025 Workshop, part of the IEEE/CVF conference on Computer Vision and Pattern Recognition (CVPR 2025).
+              Co-author of the CVPR 2025 Workshop publication for the NTIRE Challenge on Day and Night Raindrop Removal. Contributed to transformer-based image restoration methods evaluated against international research teams.
             </p>
             <div className="rounded-lg p-4 bg-background">
               <p className="text-base text-text-secondary">
-                <span className="font-semibold text-text-primary">Achievement:</span> Selected as one of the Top 32 teams out of 361+ participants. 
-                Achieved state-of-the-art results on the Raindrop Clarity dataset.
+                <span className="font-semibold text-text-primary">Achievement:</span> Selected as one of the Top 32 teams out of 361+ participants.
               </p>
             </div>
           </motion.div>
 
-          {/* VSIP Recognition */}
+          {/* NCVPRIG Publication */}
           <motion.div
             variants={itemVariants}
             className="bg-card-bg rounded-2xl p-6 shadow-card border border-transparent hover:border-primary/50 transition-all"
           >
             <div className="flex flex-col sm:flex-row items-start justify-between mb-4">
-              <h2 className="text-xl font-bold text-text-primary mb-2 sm:mb-0">VSIP Team Recognition</h2>
-              <a
-                href="https://drive.google.com/file/d/1t5l-jrJvaBEO1-B9tc28fzZg9tLuAzLv/view"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 text-sm rounded-lg font-semibold text-primary bg-primary/10 hover:bg-primary/20 transition-colors"
-              >
-                View Certificate
-              </a>
+              <h2 className="text-xl font-bold text-text-primary mb-2 sm:mb-0">NCVPRIG 2026 Publication</h2>
             </div>
+            <h3 className="text-lg font-semibold text-text-primary mb-2">
+              Weak Attention Preservation Block in Vision Transformer for Single Image De-raining
+            </h3>
             <p className="text-base text-text-secondary">
-              Formally recognized as a valued member for innovative contribution to the project "Designing of the Generalizable Vision Transformers" with officially commended technical acumen.
+              Accepted paper at NCVPRIG 2026. Designed a lightweight Transformer attention module (WAP-Block) for image de-raining with improved performance metrics (25.46 PSNR, 0.841 SSIM).
             </p>
           </motion.div>
         </motion.div>

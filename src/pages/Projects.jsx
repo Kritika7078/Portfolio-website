@@ -7,45 +7,28 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Agentic AI Driven Automated Customer Support System',
-      status: 'Ongoing',
-      description: 'An agentic AI-based customer support system in which autonomous agents perform intent analysis, decision-making, and workflow execution to resolve user queries. Designed to automate multi-step support actions while minimizing response latency and manual intervention.',
-      techStack: ['Python', 'OpenAI API (LLMs)', 'Machine Learning', 'Agentic AI Architecture'],
-      link: 'https://github.com/Kritika7078/Customer_Suppor_-Automation',
-      linkText: 'GitHub →'
+      title: 'AI Ticket Automation Platform',
+      status: 'Completed',
+      description: 'Architected an event-driven backend using Node.js, Inngest and MongoDB with JWT authentication and role-based access control for asynchronous ticket classification, moderator assignment and multi-channel notifications. Built a Qdrant-powered retrieval pipeline with calibrated similarity thresholds (0.80 duplicate reuse and 0.76 RAG generation), reducing duplicate-response latency by 15.5 seconds through intelligent historical response reuse.',
+      techStack: ['Node.js', 'MongoDB', 'JWT', 'Inngest', 'Qdrant', 'RAG', 'React'],
+      link: 'https://github.com/customer-support-automation/Customer_Support_-Automation',
+      linkText: 'GitHub →',
+      liveDemo: 'https://customer-support-automation-six.vercel.app/'
     },
     {
       id: 2,
-      title: 'Malicious PDF Detector',
+      title: 'Malicious PDF Detection',
       status: 'Completed',
-      description: 'Built an end-to-end machine learning pipeline to detect malicious PDF files using structural features. Applied LDA for dimensionality reduction and trained a Random Forest classifier, achieving 92% accuracy and a 0.93 F1-score on benchmark datasets. Developed a web interface for real-time PDF classification.',
-      techStack: ['Machine Learning', 'LDA', 'Random Forest', 'Python'],
+      description: 'Developed a Flask-based malware detection backend with PyPDF2 feature extraction, Scikit-learn preprocessing pipelines and real-time inference. Optimized LightGBM, XGBoost and Random Forest models using feature engineering, SHAP analysis and five-fold cross-validation, achieving 99.45% Accuracy and 0.9993 AUC.',
+      techStack: ['Flask', 'Python', 'LightGBM', 'XGBoost', 'Random Forest', 'SHAP', 'React'],
       link: 'https://github.com/Kritika7078/PDF_Malware_Detection_ML',
       linkText: 'GitHub →',
+      liveDemo: 'https://pdf-malware-detection-ml.vercel.app/',
       results: [
-        '• Accuracy: 92%',
-        '• F1-Score: 0.93',
-        '• ROC AUC: 0.96'
+        '• Accuracy: 99.45%',
+        '• AUC: 0.9993'
       ]
-    },
-    {
-      id: 3,
-      title: 'Election Voting System',
-      status: 'Completed',
-      description: 'Designed and implemented a secure, database-backed voting system using SQL. Ensured data integrity for voters, candidates, and election results through efficient schema design and optimized queries.',
-      techStack: ['SQL', 'Database Design', 'Query Optimization'],
-      link: 'https://github.com/Kritika7078/Election_Voting_System',
-      linkText: 'GitHub →'
     }
-    // {
-    //   id: 4,
-    //   title: 'Food App',
-    //   status: 'Completed',
-    //   description: 'Developed a full-stack food ordering application featuring user authentication, dynamic cart management, and integrated payment processing. Built with React frontend for scalable performance.',
-    //   techStack: ['React', 'Node.js', 'MongoDB', 'Full-Stack'],
-    //   link: 'https://github.com/Kritika7078/Nodejs_RegisterAndLogin',
-    //   linkText: 'Github →'
-    // }
   ];
 
   const filteredProjects = filter === 'All' 
@@ -149,14 +132,26 @@ const Projects = () => {
                   >
                     {project.status}
                   </span>
-                  <a 
-                    href={project.link}
-                    className="text-sm font-semibold text-primary hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.linkText}
-                  </a>
+                  <div className="flex items-center gap-2">
+                    <a 
+                      href={project.link}
+                      className="text-sm font-semibold text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.linkText}
+                    </a>
+                    {project.liveDemo && (
+                      <a 
+                        href={project.liveDemo}
+                        className="text-sm font-semibold text-primary hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Demo →
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
               <p className="mb-4 text-base text-text-secondary">
