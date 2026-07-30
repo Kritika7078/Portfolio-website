@@ -282,49 +282,19 @@ const Home = () => {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
+            className="bg-card-bg rounded-2xl p-8 shadow-card"
           >
-            <div className="mb-12 text-center">
+            <div className="mb-6">
               <h2 className="text-3xl font-bold text-text-primary mb-3">Skills</h2>
-              <div className="h-1 w-16 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full" />
+              <div className="h-1 w-16 bg-gradient-to-r from-primary to-secondary rounded-full" />
             </div>
-            <motion.div
-              variants={containerVariants}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
+            <div className="flex flex-wrap gap-3">
               {
-                [
-                  {
-                    category: 'Languages',
-                    skills: ['C++', 'Python', 'SQL']
-                  },
-                  {
-                    category: 'Frameworks & Tools',
-                    skills: ['PyTorch', 'Node.js', 'React', 'Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor']
-                  },
-                  {
-                    category: 'Concepts',
-                    skills: ['Data Structures and Algorithms', 'Object-Oriented Programming', 'Operating Systems', 'Database Management Systems', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'Conversational AI']
-                  },
-                  {
-                    category: 'Libraries',
-                    skills: ['NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'NLTK', 'OpenCV', 'joblib']
-                  }
-                ].map(skillGroup => (
-                  <motion.div
-                    key={skillGroup.category}
-                    variants={cardVariants}
-                    className="bg-card-bg rounded-2xl p-6 shadow-card border border-border-color hover:shadow-card-hover transition-shadow duration-300"
-                  >
-                    <h3 className="font-bold text-lg text-text-primary mb-4">{skillGroup.category}</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {skillGroup.skills.map(skill => (
-                        <span key={skill} className="px-3 py-1 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20">{skill}</span>
-                      ))}
-                    </div>
-                  </motion.div>
+                ['C++', 'Python', 'SQL', 'PyTorch', 'Node.js', 'React', 'Git/GitHub', 'VS Code', 'Colab Workspace', 'Cursor', 'Data Structures and Algorithms', 'Object-Oriented Programming', 'Operating Systems', 'Database Management Systems', 'Machine Learning', 'Deep Learning', 'Computer Vision', 'Conversational AI', 'NumPy', 'Pandas', 'Scikit-Learn', 'Keras', 'Matplotlib', 'Seaborn', 'NLTK', 'OpenCV', 'joblib'].map(skill => (
+                  <span key={skill} className="px-4 py-2 text-sm font-medium rounded-full bg-primary/10 text-primary border border-primary/20">{skill}</span>
                 ))
               }
-            </motion.div>
+            </div>
           </motion.div>
 
           {/* Achievements Card */}
